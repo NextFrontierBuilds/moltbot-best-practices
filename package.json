@@ -1,6 +1,6 @@
 {
   "name": "moltbot-best-practices",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Best practices for AI agents to avoid common mistakes. Learn from real failures - confirms before executing, shows drafts before publishing, stops when told to stop.",
   "main": "SKILL.md",
   "keywords": [

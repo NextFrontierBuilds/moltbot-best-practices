@@ -1,7 +1,7 @@
 ---
 name: moltbot-best-practices
 description: Best practices for AI agents to avoid common mistakes. Learn from real failures - confirms before executing, shows drafts before publishing, stops when told to stop, and doesn't over-automate.
-version: 1.0.0
+version: 1.1.0
 author: NextFrontierBuilds
 keywords: moltbot, clawdbot, ai-agent, best-practices, prompt-engineering, agent-behavior, claude, gpt, cursor, vibe-coding, automation, ai-assistant
 ---
@@ -106,6 +106,37 @@ Read ALL queued messages before acting. The user might have sent corrections or 
 - ❌ Assuming instead of asking
 - ❌ Announcing "done" without verifying
 - ❌ Ignoring "READ THE CHAT"
+
+## Recommended Config
+
+Enable memory flush before compaction and session memory search so your agent remembers context across sessions:
+
+```json
+{
+  "agents": {
+    "defaults": {
+      "compaction": {
+        "memoryFlush": {
+          "enabled": true
+        }
+      },
+      "memorySearch": {
+        "enabled": true,
+        "sources": ["memory", "sessions"],
+        "experimental": {
+          "sessionMemory": true
+        }
+      }
+    }
+  }
+}
+```
+
+**What this does:**
+- **memoryFlush** — Agent gets a chance to save important context before compaction wipes the conversation
+- **memorySearch + sessionMemory** — Agent can search past session transcripts, not just MEMORY.md files
+
+Apply with: `clawdbot config patch <json>`
 
 ## Installation
 
