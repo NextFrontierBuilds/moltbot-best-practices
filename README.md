@@ -1,5 +1,29 @@
 # MoltBot Best Practices
 
+**🤖 15 Rules to Make AI Agents Actually Listen** — Learn from real failures, not theory.
+
+[![npm version](https://img.shields.io/npm/v/moltbot-best-practices.svg?style=flat-square)](https://www.npmjs.com/package/moltbot-best-practices)
+[![npm downloads](https://img.shields.io/npm/dm/moltbot-best-practices.svg?style=flat-square)](https://www.npmjs.com/package/moltbot-best-practices)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
+---
+
+## Works With
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude-AI-orange?style=for-the-badge&logo=anthropic" alt="Claude AI" />
+  <img src="https://img.shields.io/badge/GPT-OpenAI-412991?style=for-the-badge&logo=openai" alt="GPT" />
+  <img src="https://img.shields.io/badge/Cursor-IDE-000000?style=for-the-badge" alt="Cursor" />
+  <img src="https://img.shields.io/badge/Copilot-GitHub-000000?style=for-the-badge&logo=github" alt="Copilot" />
+  <img src="https://img.shields.io/badge/Windsurf-IDE-0066FF?style=for-the-badge" alt="Windsurf" />
+</p>
+
+<p align="center">
+  <strong>Built for:</strong> Clawdbot • Moltbot • Claude Code • Any AI Agent
+</p>
+
+---
+
 Best practices for AI agents learned from real failures. Make your agent listen better, fail less, and actually do what you ask.
 
 ## Install
